@@ -1,0 +1,522 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #040714
+}
+
+
+h1, h2, h3, ul, li, .blanc, .titre{color: white;
+margin-bottom: 10px;
+}
+
+p{
+    color: gray;
+}
+
+span, h3{
+    font-size: x-small;
+    color: gray;
+}
+
+#text, #texte{
+    font-size: xx-small;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px){ 
+    h1, h2, h3, p, ul, li{ color: gray;
+        margin-bottom: 5px;}
+
+    .blanc, .titre{
+        margin-bottom: 5px;
+    }
+        /* Mon header */
+    nav.navbar{
+        display: none;
+    }
+
+    .identifier2{
+        background: transparent;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        width: auto;
+        padding: 1% 5% 3% 5%;
+    }
+
+
+    button{
+        color: white;
+        background-color: #0483EE;
+        width: auto;
+        height: 50px;
+        text-align: center;
+        padding: 5% 10% 6% 10%;
+    }
+
+    .intro{
+        background-image: url("../assets/olp_hero_desktop_UKI_FR.jpg");
+        background-size: 100%;
+        width: 100%;
+        height: 25vh;
+        text-align: left;
+        padding-left: 4%;
+        padding-top: 100px;
+    }
+
+    .intro img{
+        width: 30%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto 
+    }
+    .conteneur{
+        height: auto;
+        width: 100%;
+    }
+
+    figure img{
+        height: auto;
+        width: 30%;
+        align-items: center;
+    } 
+
+    article#detail{
+        height: auto;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image img#franchise{
+        display: none;
+        
+    }
+
+    .image img{
+        height: auto;
+        width: auto;
+        padding-bottom: 30px;
+    }
+
+/* Mon main */
+
+    main{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure img{
+        width: 100%;
+        height: auto;
+    }
+
+    div{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    
+    div.bloc h2{
+        text-align: center;
+        font-size: x-large;
+    }
+
+    section{
+        width: 50%;
+        height: 300px;
+        padding: 10%;
+        text-align: center;
+        align-items: center;
+        float: left;
+        display: block;
+    }
+
+    section img{
+        width: 100%;
+        height: auto;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    div h2, li{
+        font-size: small;
+    }
+
+    /* mon footer */
+
+    footer{
+        height: auto;
+        width: 100%;
+    }
+
+    footer img{
+        height: auto;
+        width: 20%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    footer ul{
+        font-size: x-small;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer ul li{
+        margin: 10px;
+        display: inline;
+        font-size: 7px;
+    }
+
+    footer ul :first-child(){
+        display: block;
+        float: left;
+    }
+
+    footer li img{
+        display: inline;
+    }
+
+    .footerTel{
+        height: 80px;
+        width: 100%;
+        background-color: black;
+        opacity: 0.7;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .navTel{
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        background-color: black;
+        margin-bottom: 0;
+    }
+
+    .navTel .identifier1{
+        position: fixed;
+        right: 0;
+        top: 5px;
+        height: 40px;
+    }
+    .navTel #logo{
+        width: 20%;
+        height: auto;
+        position: fixed;
+        left: 0;
+        top: 5px;
+    }
+}
+
+/* version destock */
+ @media screen and (min-width : 1025px){
+   .intro{
+    background-image: url("../assets/olp_hero_desktop_UKI_FR.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 100px;
+} 
+
+    .intro img{
+        width: 15%;
+        height: auto;
+    }
+    h2{
+        font-size: 50px;
+    }
+    .blanc{
+        font-size: 30px;
+    }
+
+    /* navbar au scroll */
+    .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #090b13;
+    z-index: 4;
+    text-align: center;
+    display: flex;
+    box-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    letter-spacing: 16px;
+    }
+
+    .navbar .left{
+        height: 60px;
+        width: 7%;
+    }
+
+    .navbar .left img{
+        display: block;
+        width: 100%;
+    }
+
+    button{
+        color: white;
+        background-color: #0483EE;
+        width: auto;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .identifier1{
+        background: transparent;
+        height: 40px;
+    }
+
+    .identifier2{
+        background: transparent;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 40px;
+
+    }
+
+    .inscrivez-vous{
+        height: 40px
+    }    
+   
+    article#detail{
+        width: 50%;
+        height: auto;
+    }
+    
+    div.conteneur{
+        display: flex;
+        width: 100%;
+        height: auto;
+        text-align: left;
+        justify-content: space-between;
+        margin: 50px 0;
+    }
+
+    .bouton-regarder, .bouton-economiser{
+        height: 60px;
+        width: 200px;
+    }
+
+    .div1, .div2{
+        padding-top: 10px;
+    }
+
+    div.image{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .image img{
+        width: 50%;
+        height: auto;
+    }
+
+    /* :animation de la petite fleche */
+    .image a img{
+        width: auto;
+        height: auto;
+        animation-duration: 2s;
+        animation-name: glissement;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes glissement {
+        from {
+            margin-top: 100%;
+        }
+      
+        to {
+            margin-bottom: -10%;
+        }
+      }
+
+    figure#logo{
+        width: 10%;
+        height: auto;
+    }
+    
+    #logo img{
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    hr{display: none;}
+    
+    main{
+        width: 95%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    figure{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        display: block;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 0 30px 0;
+    }
+    
+    figure img{
+        width: 50%;
+        height: auto;
+    }
+
+    main figure div{
+        width: 50%;
+        height: auto;
+        text-align: left;
+    }
+/* j'inverse l'ordre du contenue de la 2eme et 4eme class */
+    .deux, .quatre{
+        flex-direction: row-reverse;
+    }
+
+    h2.titre{
+        font-size: 30px;
+    }
+    
+    .bloc h2{
+        text-align: center;
+        font-size: x-large;
+    }
+    
+    div.bloc{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+        padding: 12px;
+        transition: opacity 1s;
+    }
+
+    section{
+        width: 25%;
+        height: auto;
+        text-align: center;
+        float: left;
+        display: block;
+    }
+    
+    section img{
+        width: 100%;
+        height: auto;
+    }
+
+    ul{
+        list-style: none;
+        font-size: x-large;
+    }
+    
+    div h2, li{
+        font-size: small;
+    }
+    /* mon footer */
+    footer{
+        height: auto;
+        width: 90%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    footer img{
+        height: auto;
+        width: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+    
+    footer ul{
+        width: 100%;
+        height: auto;
+        font-size: x-small;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: inherit;
+        
+    }
+
+    footer ul.fin{
+        width: 15%;
+        height: auto;
+        font-size: x-small;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    footer ul li{
+        margin: 10px;
+        display: inline;
+        text-align: center;
+        font-size: 12px;
+        display: inline-block;
+    }
+    
+    footer ul :first-child(){
+        display: block;
+        float: left;
+    }
+    
+    footer li img{
+        display: inline;
+    }
+/* nav et footer qui apparait au scrool*/
+    div#telephone{
+        display: none;
+        height: 40px;
+    }
+} 
